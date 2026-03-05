@@ -35,7 +35,7 @@
     animation: color 8s infinite ease-in-out ;
 }
 .center{
-    width: 650px;
+    max-width: 650px;
     min-height: 300px;
     border-radius: 50px;
     background:linear-gradient(180deg,rgba(243, 112, 112, 0.9),rgba(121, 40, 202,0.8));
