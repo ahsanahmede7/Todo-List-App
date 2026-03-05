@@ -3,6 +3,8 @@ let addbtn = document.getElementById("addbtn")
 let listin=document.getElementById("listin")
 let center = document.getElementById('center')
 let deleteall = document.getElementById("deleteall")
+let date=new Date()
+let settime = date.toDateString().slice(4) 
 
 
 function add(){
@@ -34,7 +36,7 @@ function add(){
     if(input.value.trim()!=""){
         li.classList.add("li-text")
 div1.appendChild(span)
-        span.innerText = input.value
+        span.innerText = input.value    
     div1.style = 'width:70%;height:40px;background-color: rgb(233, 228, 228);padding-left:10px;display:flex;justify-content:space-between'
     let tick =document.createElement('div')
     let arrow = document.createElement('span')
@@ -42,13 +44,18 @@ div1.appendChild(span)
     btn2.style = 'display:flex;gap:20px'
     arrow.innerText ='⬆'
     arrow.style = 'cursor:pointer'
+    let time = document.createElement('span')
+    div1.appendChild(time)
     div1.appendChild(btn2)
     btn2.appendChild(arrow)
     tick.style = 'width:15px;height:15px;margin:12px 5px 0px 0px;border:1px solid black ;background-color:white'
     tick.addEventListener("click",()=>{
+        time.innerText = settime
+        time.classList.add('text')
     
 
             span.style.textDecoration = "line-through"
+
             span.style.opacity =0.5
             tick.style.background = 'red'
             flag=false

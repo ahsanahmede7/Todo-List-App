@@ -23,7 +23,7 @@
     border: 1px solid black;
      background: linear-gradient(
         270deg,
-        #7928ca,
+        rgb(121, 40, 202),
         rgb(242, 179, 179),
         #1a1222,
         rgb(223, 106, 106)
@@ -38,12 +38,15 @@
     width: 650px;
     min-height: 300px;
     border-radius: 50px;
+    background:linear-gradient(180deg,rgba(243, 112, 112, 0.9),rgba(121, 40, 202,0.8));
 
-  background:
-    linear-gradient(white, white) padding-box,
-    linear-gradient(180deg, #ff0080, #7928ca) ;
+  background-color: white;
     box-sizing: border-box;
     padding: 20px;
+}
+.text{
+    font-size: 10px;
+    color: black;
 }
 .li-text{
     width:90%;
