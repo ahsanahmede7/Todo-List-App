@@ -12,6 +12,15 @@
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
+@media(max-width:600px) {
+.test{
+    display: flex;
+    flex-direction: column !important ;
+    align-items: center !important;
+
+}
+.center{width: 100% !important;}    
+}
 .mycontainer{
     display: flex;
     align-items: center;justify-content: center;
@@ -35,9 +44,9 @@
     animation: color 8s infinite ease-in-out ;
 }
 .center{
-    max-width: 650px;
+    width: 850px;
     min-height: 300px;
-    border-radius: 50px;
+    border-radius: 20px;
     background:linear-gradient(180deg,rgba(243, 112, 112, 0.9),rgba(121, 40, 202,0.8));
 
   background-color: white;
