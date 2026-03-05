@@ -19,7 +19,7 @@
     align-items: center !important;
 
 }
-.center{width: 100% !important;}    
+.center{max-width: 100% !important;}    
 }
 .mycontainer{
     display: flex;
@@ -44,7 +44,7 @@
     animation: color 8s infinite ease-in-out ;
 }
 .center{
-    min-width: 800px;
+    width: 800px;
     min-height: 300px;
     border-radius: 20px;
     background:linear-gradient(180deg,rgba(243, 112, 112, 0.9),rgba(121, 40, 202,0.8));
